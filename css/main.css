@@ -12,6 +12,19 @@
     padding: 0;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
 html,
 body,
 div,
@@ -929,6 +942,10 @@ small {
     float: left;
 }
 
+.col-sm-4 {
+    width: 33.33333333%;
+}
+
 .mb-60 {
     margin-bottom: 60px !important;
 }
@@ -975,6 +992,124 @@ small {
     padding-bottom: 5px;
 }
 
+/* Contacts Styles */
+#contact {
+    background: url(../img/contact.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+    min-height: 670px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.block-contact {
+    position: relative;
+}
+
+.contact-overlay {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    width: 33%;
+    padding: 50px;
+}
+
+.bg-grey-dark {
+    background: #333333;
+}
+
+.contact-form,
+.reply-form {
+    position: relative;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea,
+.reply-form input[type="text"],
+.reply-form textarea {
+    background: rgba(255, 255, 255, .10);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0 0 14px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 9px 15px;
+    resize: none;
+    width: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.contact-form textarea,
+.reply-form textarea {
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    height: 150px;
+}
+
+.contact-form .submit {
+    cursor: pointer;
+    border: none;
+    float: right;
+}
+
+.but.opc {
+    background: #199cdb;
+}
+
+.but {
+    padding: 7px 40px;
+    display: inline-block;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 15px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.pt-80 {
+    padding-top: 80px !important;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.info-ico,
+.info-det {
+    float: left;
+}
+
+.info-det {
+    width: 234px;
+}
+
+.info-ico span.ico {
+    color: #199cdb;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 52px;
+    margin-left: 20px;
+    margin-right: 40px;
+    position: relative;
+    text-align: center;
+    width: 40px;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+}
+
+/* -----------------------------------Media------------------------------ */
+
 /* Masonry on tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .masonry {
@@ -989,7 +1124,6 @@ small {
     }
 }
 
-/* Media */
 @media (min-width: 480px) {
     .container {
         width: 470px;
